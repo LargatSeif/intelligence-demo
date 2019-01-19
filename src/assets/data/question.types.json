@@ -1,0 +1,46 @@
+{
+    "types": [
+        {
+            "id": 1,
+            "title": "Text input",
+            "value": null,
+            "type": "text",
+            "required": false,
+            "readonly": true,
+            "label": null,
+            "placeholder": null,
+            "length": {
+                "max": null,
+                "min": null
+            }
+        },
+        {
+            "id": 2,
+            "title": "Number input",
+            "value":null,
+            "type": "number",
+            "required": false,
+            "readonly": true,
+            "label": null,
+            "placeholder": null,
+            "length": {
+                "max": null,
+                "min": null
+            }
+        },
+        {
+            "id": 3,
+            "title": "Textarea input",
+            "value": null,
+            "type": "textarea",
+            "required": false,
+            "readonly": true,
+            "label": null,
+            "placeholder": null,
+            "length": {
+                "max": null,
+                "min": null
+            }
+        }
+    ]
+}

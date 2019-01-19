@@ -1,0 +1,20 @@
+<div class="form-group row">
+  <label for="" class="col-sm-3 col-form-label" [innerHTML]="options.label == null ?'Empty label':options.label"></label>
+  <div class="col-sm-8">
+    <input #input 
+    type="number" 
+    name="number-input" 
+    [readonly]="options.readonly" 
+    [required]="options.required" 
+    [placeholder]="options.placeholder"
+    [max]="options.length.max == null ? 99999 : options.length.max" 
+    [min]="options.length.min == null ? 0 : options.length.min" 
+    class="form-control" >
+  </div>
+  <div class="col-sm-1">
+    <a (click)="options.readonly == false?options.readonly = true:options.readonly =false" class="btn btn-default">
+      <i *ngIf="options.readonly == true" class="far fa-eye"></i>
+      <i *ngIf="options.readonly == false" class="far fa-eye-slash"></i>
+    </a>
+  </div>
+</div>

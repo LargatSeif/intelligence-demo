@@ -1,0 +1,22 @@
+
+<div class="form-group row">
+  <label for="" class="col-sm-3 col-form-label" [innerHTML]="options.label == null ?'Empty label':options.label"></label>
+  <div class="col-sm-8">
+    <input 
+      [readonly]="options.readonly" 
+      type="text" 
+      name="text-input" 
+      [required]="options.required" 
+      [placeholder]="options.placeholder == null ? 'Empty label':options.placeholder" 
+      [maxLength]="options.length.max == null ? 254 : options.length.max"
+      [minLength]="options.length.min == null ? 254 : options.length.min"
+      class="form-control">
+  </div>
+  <div class="col-sm-1">
+    <a (click)="options.readonly = !options.readonly" class="btn btn-default">
+      <i *ngIf="options.readonly == true" class="far fa-eye"></i>
+      <i *ngIf="options.readonly == false" class="far fa-eye-slash"></i>
+    </a>
+  </div>
+</div>
+

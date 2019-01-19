@@ -1,0 +1,64 @@
+<div class="row">
+
+  <div class="col-md-9" *ngIf="form">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div class="form-group row">
+          <label for="form.title" class="col-sm-2 col-form-label">Title</label>
+          <div class="col-sm-10">
+            <input type="text" name="form.title" class="form-control" [(ngModel)]="form.title">
+          </div>
+        </div>
+
+      </li>
+      <li class="list-group-item">
+        <div class="form-group row">
+          <label for="form.created_at" class="col-sm-2 col-form-label">Created At</label>
+          <div class="col-sm-10">
+            <input type="text" name="form.created_at" class="form-control" [(ngModel)]="form.created_at">
+          </div>
+        </div>
+      </li>
+    </ul>
+    <hr>
+    <ul class="list-group" *ngIf="questionsList?.length >= 0" [dragula]="dragulaBag" [(dragulaModel)]="questionsList" style="min-height: 100px;border:1px solid #000;">
+      <li class="list-group-item" *ngFor="let question of questionsList; let i=index">
+        <div class="row">
+          <div class="col-md-11">
+            <input-text *ngIf="question.type == 'text'" [options]="question"></input-text>
+            <input-number *ngIf="question.type == 'number'" [options]="question"></input-number>
+            <input-textarea *ngIf="question.type == 'textarea'" [options]="question"></input-textarea>
+            <input-text *ngIf="question.type == 'select'" [options]="question"></input-text>
+            <!-- <span *ngIf="question.type != 'text' && question.type != 'number'" [innerHTML]="question.id"></span> -->
+          </div>
+          <div class="col-md-1">
+            <a (click)="removeQuestion(question)" class="btn btn-default">
+              <i class="far fa-trash-alt danger"></i>
+            </a>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+    <p *ngIf="questionsList?.length < 0" class="alert alert-info">
+      No questions yet !
+    </p>
+  </div>
+  <div class="col-md-3">
+    <ul class="list-group" *ngIf="typesList?.length >= 0" [dragula]="dragulaBag" [(dragulaModel)]="typesList">
+      <li class="list-group-item" *ngFor="let type of typesList">
+        <div class="row">
+          <div class="col-sm-2" style="border-right:1px solid black;padding-right:30px;">
+            <i class="fas fa-arrows-alt"></i>
+          </div>
+          <div class="col-sm-9">
+            <span [innerHTML]="type.title"></span>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <p *ngIf="typesList?.length < 0" class="alert alert-info">
+      No types available !
+    </p>
+  </div>
+</div>
