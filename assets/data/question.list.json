@@ -1,0 +1,161 @@
+{
+    "components": [
+        {
+            "label": "Text Field",
+            "placeholder": "empty",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "readonly": false,
+            "type": "textfield",
+            "input": true,
+            "key": "textField2",
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": "",
+                "row": 10,
+                "cols": 20
+            }
+        },
+        {
+            "label": "TextArea Field",
+            "placeholder": "empty",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "readonly": false,
+            "type": "textareafield",
+            "input": true,
+            "key": "textareafield",
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": "",
+                "minLength": 10,
+                "maxLength": 20
+            }
+        },
+        {
+            "label": "Number Field",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "alwaysEnabled": false,
+            "type": "numberfield",
+            "input": true,
+            "key": "numberfield",
+            "readonly":false,
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": "",
+                "min": 10,
+                "max": 20
+            }
+        },
+        {
+            "label": "Select Field",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "alwaysEnabled": false,
+            "type": "selectfield",
+            "input": true,
+            "key": "selectfield",
+            "multiple":false,
+            "data": {
+                "choices": [
+                    {
+                        "label":"Tunis",
+                        "value":"tunis"
+                    },
+                    {
+                        "label": "Ariana",
+                        "value": "ariana"
+                    }
+                ]
+            },
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": ""
+            }
+        },
+        {
+            "label": "Select Boxes",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "alwaysEnabled": false,
+            "type": "selectboxesfield",
+            "input": true,
+            "key": "selectboxesfield",
+            "multiple": false,
+            "data": {
+                "choices": [
+                    {
+                        "label": "Tunis",
+                        "value": "tunis",
+                        "selected":false
+                    },
+                    {
+                        "label": "Ariana",
+                        "value": "ariana",
+                        "selected":false
+                    }
+                ]
+            },
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": ""
+            }
+        },
+        {
+            "label": "Radio Boxes",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "alwaysEnabled": false,
+            "type": "radioboxesfield",
+            "input": true,
+            "key": "radioboxesfield",
+            "multiple": false,
+            "data": {
+                "choices": [
+                    {
+                        "label": "Tunis",
+                        "value": "tunis"
+                    },
+                    {
+                        "label": "Ariana",
+                        "value": "ariana"
+                    }
+                ]
+            },
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": ""
+            }
+        },
+        {
+            "label": "Panel",
+            "title": "Panel",
+            "placeholder": "Place input here",
+            "description": "lorem ipsum",
+            "errorLabel": "Oh oh !",
+            "customClass": "empty",
+            "tabindex": "1",
+            "collapsible": false,
+            "mask": false,
+            "tableView": false,
+            "alwaysEnabled": false,
+            "type": "panel",
+            "input": false,
+            "key": "panel",
+            "components": []
+        }
+    ]
+}
