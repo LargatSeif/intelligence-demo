@@ -67,13 +67,10 @@
             "data": {
                 "choices": [
                     {
-                        "label":"Tunis",
-                        "value":"tunis"
-                    },
-                    {
-                        "label": "Ariana",
-                        "value": "ariana"
+                        "label":"Sample",
+                        "value":"sample"
                     }
+
                 ]
             },
             "validate": {
@@ -95,13 +92,8 @@
             "data": {
                 "choices": [
                     {
-                        "label": "Tunis",
-                        "value": "tunis",
-                        "selected":false
-                    },
-                    {
-                        "label": "Ariana",
-                        "value": "ariana",
+                        "label": "Sample",
+                        "value": "sample",
                         "selected":false
                     }
                 ]
@@ -127,10 +119,6 @@
                     {
                         "label": "Tunis",
                         "value": "tunis"
-                    },
-                    {
-                        "label": "Ariana",
-                        "value": "ariana"
                     }
                 ]
             },
