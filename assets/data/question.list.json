@@ -141,8 +141,8 @@
             }
         },
         {
-            "label": "Crietria",
-            "title": "Crietria",
+            "label": "Panel",
+            "title": "Panel",
             "placeholder": "Place input here",
             "description": "lorem ipsum",
             "errorLabel": "Oh oh !",

@@ -2,5 +2,114 @@
     "title": "form 1",
     "created_at": "21/02/2019",
     "owner": "",
-    "components": []
+    "components": [
+        {
+            "label": "Text Field",
+            "placeholder": "empty",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "readonly": false,
+            "type": "textfield",
+            "input": true,
+            "key": "textField2",
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": "",
+                "minLength": 10,
+                "maxLength": 20
+            }
+        },
+        {
+            "label": "Select Field",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "alwaysEnabled": false,
+            "type": "selectfield",
+            "input": true,
+            "key": "selectfield",
+            "multiple": false,
+            "data": {
+                "choices": [
+                    {
+                        "label": "Tunis",
+                        "value": "tunis"
+                    },
+                    {
+                        "label": "Ariana",
+                        "value": "ariana"
+                    }
+                ]
+            },
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": "",
+                "max": "3",
+                "min": "1"
+            }
+        },
+        {
+            "label": "Select Boxes",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "alwaysEnabled": false,
+            "type": "selectboxesfield",
+            "input": true,
+            "key": "selectboxesfield",
+            "multiple": false,
+            "data": {
+                "choices": [
+                    {
+                        "label": "Paris",
+                        "value": "paris",
+                        "selected": true
+                    },
+                    {
+                        "label": "Lyon",
+                        "value": "lyon",
+                        "selected": false
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Panel",
+            "title": "section1",
+            "placeholder": "azeaze",
+            "description": "aezazeaze",
+            "errorLabel": "qsdksldnioalzd",
+            "customClass": "cus",
+            "tabindex": "1",
+            "collapsible": false,
+            "mask": false,
+            "tableView": false,
+            "alwaysEnabled": false,
+            "type": "panel",
+            "input": false,
+            "key": "panel",
+            "components": [
+                {
+                    "label": "Text Field",
+                    "showWordCount": false,
+                    "showCharCount": false,
+                    "tableView": true,
+                    "alwaysEnabled": false,
+                    "type": "textfield",
+                    "input": true,
+                    "key": "textField2",
+                    "validate": {
+                        "required": true,
+                        "customMessage": "",
+                        "json": "",
+                        "minLength": 10,
+                        "maxLength": 20
+                    }
+                }
+            ]
+        }
+    ]
 }
