@@ -91,6 +91,8 @@
             "readonly": false,
             "validate": {
                 "required": true,
+                "decimals":true,
+                "step":"any",
                 "customMessage": "",
                 "json": "",
                 "min": 10,
@@ -159,6 +161,7 @@
             "input": true,
             "key": "radioboxesfield",
             "multiple": false,
+            "extension":false,
             "data": {
                 "choices": [
                     {
