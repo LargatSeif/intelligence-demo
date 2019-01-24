@@ -17,6 +17,11 @@
                 "json": "",
                 "row": 10,
                 "cols": 20
+            },
+            "conditional":{
+                "show": null,
+                "when":null,
+                "equalTo":null
             }
         },
         {
@@ -192,6 +197,12 @@
             "type": "panel",
             "input": false,
             "key": "panel",
+            "score": {
+                "value": 0,
+                "min": 0,
+                "max": 99,
+                "readonly": false
+            },
             "components": []
         }
     ]

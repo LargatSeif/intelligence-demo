@@ -19,6 +19,11 @@
                 "json": "",
                 "minLength": 10,
                 "maxLength": 20
+            },
+            "conditional": {
+                "show": null,
+                "when": "",
+                "eq": "true"
             }
         },
         {
@@ -91,6 +96,12 @@
             "type": "panel",
             "input": false,
             "key": "panel",
+            "score":{
+                "value":0,
+                "min":0,
+                "max":99,
+                "readonly":false
+            },
             "components": [
                 {
                     "label": "Text Field",
