@@ -198,6 +198,7 @@
             "input": false,
             "key": "panel",
             "score": {
+                "show":true,
                 "value": 0,
                 "min": 0,
                 "max": 99,
