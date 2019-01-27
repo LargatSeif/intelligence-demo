@@ -1,8 +1,6 @@
 {
     "components": [
         {
-            "id": null,
-            "order": null,
             "label": "Text Field",
             "placeholder": "empty",
             "showWordCount": false,
@@ -19,73 +17,13 @@
                 "row": 10,
                 "cols": 20
             },
-            "conditional":{
+            "conditional": {
                 "show": null,
-                "when":null,
-                "equalTo":null
-            }
-        },
-        {
+                "when": null,
+                "equalTo": null
+            },
             "id": null,
-            "order": null,
-            "label": "DatePicker Field",
-            "placeholder": "empty",
-            "showWordCount": false,
-            "showCharCount": false,
-            "tableView": true,
-            "readonly": false,
-            "type": "datepickerfield",
-            "input": true,
-            "rangePicker": false,
-            "key": "datepickerfield",
-            "validate": {
-                "required": true,
-                "customMessage": "",
-                "json": "",
-                "minDate": "Mon Jan 21 2019 16:48:41 GMT+0100 (Central European Standard Time)",
-                "maxDate": "Mon Jan 21 2019 16:48:41 GMT+0100 (Central European Standard Time)"
-            }
-        },
-        {
-            "id": null,
-            "order": null,
-            "label": "TimePicker Field",
-            "placeholder": "empty",
-            "showWordCount": false,
-            "showCharCount": false,
-            "tableView": true,
-            "readonly": false,
-            "type": "timepickerfield",
-            "input": true,
-            "showSpinners": true,
-            "key": "timepickerfield",
-            "validate": {
-                "required": true,
-                "customMessage": "",
-                "json": "",
-                "min": "22-01-2019 00:00",
-                "max": "23-01-2019 00:00"
-            }
-        },
-        {
-            "id": null,
-            "order": null,
-            "label": "TextArea Field",
-            "placeholder": "empty",
-            "showWordCount": false,
-            "showCharCount": false,
-            "tableView": true,
-            "readonly": false,
-            "type": "textareafield",
-            "input": true,
-            "key": "textareafield",
-            "validate": {
-                "required": true,
-                "customMessage": "",
-                "json": "",
-                "minLength": 10,
-                "maxLength": 20
-            }
+            "order": null
         },
         {
             "id": null,
@@ -101,38 +39,12 @@
             "readonly": false,
             "validate": {
                 "required": true,
-                "decimals":true,
-                "step":"any",
+                "decimals": true,
+                "step": "any",
                 "customMessage": "",
                 "json": "",
                 "min": 10,
                 "max": 20
-            }
-        },
-        {
-            "id": null,
-            "order": null,
-            "label": "Select Field",
-            "showWordCount": false,
-            "showCharCount": false,
-            "tableView": true,
-            "alwaysEnabled": false,
-            "type": "selectfield",
-            "input": true,
-            "key": "selectfield",
-            "multiple": false,
-            "data": {
-                "choices": [
-                    {
-                        "label": "Sample",
-                        "value": "sample"
-                    }
-                ]
-            },
-            "validate": {
-                "required": true,
-                "customMessage": "",
-                "json": ""
             }
         },
         {
@@ -174,7 +86,7 @@
             "input": true,
             "key": "radioboxesfield",
             "multiple": false,
-            "extension":false,
+            "extension": false,
             "data": {
                 "choices": [
                     {
@@ -190,10 +102,98 @@
             }
         },
         {
-            "id":null,
+            "label": "DatePicker Field",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "type": "datepickerfield",
+            "input": true,
+            "key": "datepickerfield",
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": "",
+                "minDate": "Mon Jan 21 2019 16:48:41 GMT+0100 (Central European Standard Time)",
+                "maxDate": "Mon Jan 21 2019 16:48:41 GMT+0100 (Central European Standard Time)"
+            },
+            "id": null,
             "order": null,
-            "label": "Panel",
-            "title": "Panel",
+            "placeholder": "empty",
+            "readonly": false,
+            "rangePicker": false
+        },
+        {
+            "label": "TimePicker Field",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "type": "timepickerfield",
+            "input": true,
+            "key": "timepickerfield",
+            "id": null,
+            "order": null,
+            "placeholder": "empty",
+            "readonly": false,
+            "showSpinners": true,
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": "",
+                "min": "22-01-2019 00:00",
+                "max": "23-01-2019 00:00"
+            }
+        },
+        {
+            "label": "TextArea Field",
+            "placeholder": "empty",
+            "tableView": true,
+            "type": "textareafield",
+            "input": true,
+            "key": "textareafield",
+            "id": null,
+            "order": null,
+            "showWordCount": false,
+            "showCharCount": false,
+            "readonly": false,
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": "",
+                "minLength": 10,
+                "maxLength": 20
+            }
+        },
+        {
+            "id": null,
+            "order": null,
+            "label": "Select Field",
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "alwaysEnabled": false,
+            "type": "selectfield",
+            "input": true,
+            "key": "selectfield",
+            "multiple": false,
+            "data": {
+                "choices": [
+                    {
+                        "label": "Sample",
+                        "value": "sample"
+                    }
+                ]
+            },
+            "validate": {
+                "required": true,
+                "customMessage": "",
+                "json": ""
+            }
+        },
+        {
+            "id": null,
+            "order": null,
+            "label": "Criteria",
+            "title": "Criteria",
             "placeholder": "Place input here",
             "description": "lorem ipsum",
             "errorLabel": "Oh oh !",
@@ -203,12 +203,12 @@
             "mask": false,
             "tableView": false,
             "alwaysEnabled": false,
-            "type": "panel",
+            "type": "criteria",
             "input": false,
-            "key": "panel",
+            "key": "criteria",
             "score": {
-                "show":true,
-                "formula":"",
+                "show": true,
+                "formula": "",
                 "value": 0,
                 "min": 0,
                 "max": 99,
